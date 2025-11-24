@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Hero from "@/app/(components)/Hero";
+import Hero from "@/app/components/Hero";
 import prices from "@/lib/data/prices.json";
 
 export const runtime = "nodejs";
