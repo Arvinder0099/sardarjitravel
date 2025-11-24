@@ -1,18 +1,17 @@
 /** @type {import('next').NextConfig} */
-// Use default `.next` build directory for reliability
 
 const nextConfig = {
   reactStrictMode: false,
   poweredByHeader: false,
-  // Use separate build directories per site role
-  distDir: process.env.SITE_ROLE === 'admin' ? '.next-admin' : '.next-public',
-  // Ensure Next writes a BUILD_ID for production starts
-  generateBuildId: async () => {
-    if (process.env.BUILD_ID && process.env.BUILD_ID.trim().length > 0) {
-      return process.env.BUILD_ID.trim();
+  distDir: '.next',
+  webpack: (config, { isServer }) => {
+    // Exclude admin routes from public build
+    if (isServer && process.env.SITE_ROLE === 'public') {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+      };
     }
-    const ts = new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14);
-    return `build_${ts}`;
+    return config;
   },
   images: {
     unoptimized: true,
@@ -22,15 +21,10 @@ const nextConfig = {
       "ext.same-assets.com",
       "ugc.same-assets.com",
     ],
-    remotePatterns: [
-      { protocol: "https", hostname: "source.unsplash.com", pathname: "/**" },
-      { protocol: "https", hostname: "images.unsplash.com", pathname: "/**" },
-      { protocol: "https", hostname: "ext.same-assets.com", pathname: "/**" },
-      { protocol: "https", hostname: "ugc.same-assets.com", pathname: "/**" },
-    ],
   },
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
+
   async headers() {
     const isDev = process.env.NODE_ENV !== 'production';
     const scriptSrc = isDev ? "'self' 'unsafe-inline' 'unsafe-eval'" : "'self' 'unsafe-inline'";
