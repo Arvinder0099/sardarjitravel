@@ -22,7 +22,7 @@ const nextConfig = {
       ? "'self' https: ws: wss: http://localhost:3050 http://0.0.0.0:3050 http://localhost:3051 http://0.0.0.0:3051 http://127.0.0.1:3051"
       : "'self' https:";
 
-    const csp = `default-src 'self'; img-src 'self' data: blob: https://source.unsplash.com https://images.unsplash.com https://ext.same-assets.com https://ugc.same-assets.com; script-src ${scriptSrc}; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src ${connectSrc}; frame-ancestors 'self'; base-uri 'self'; form-action 'self'`;
+    const csp = `default-src 'self'; img-src 'self' data: blob: https:; script-src ${scriptSrc}; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src ${connectSrc}; frame-ancestors 'self'; base-uri 'self'; form-action 'self'`;
 
     return [
       {
