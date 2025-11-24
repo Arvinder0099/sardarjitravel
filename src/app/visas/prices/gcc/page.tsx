@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Hero from "../../../components/Hero";
-import prices from "../../../lib/data/prices.json";
+import prices from "../../../../lib/data/prices.json";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
