@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Setup2FA() {
   const [data, setData] = useState<any>(null);
@@ -66,11 +65,9 @@ export default function Setup2FA() {
               </h2>
               <div className="flex justify-center mb-4">
                 <div className="bg-white p-4 rounded-lg">
-                  <Image 
+                  <img 
                     src={data.qrCode} 
                     alt="2FA QR Code" 
-                    width={256}
-                    height={256}
                     className="w-64 h-64"
                   />
                 </div>
