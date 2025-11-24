@@ -22,6 +22,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/admin-login', request.url));
   }
 
+  // If authenticated and on homepage, redirect to dashboard
+  if (request.nextUrl.pathname === '/') {
+    return NextResponse.redirect(new URL('/dashboard', request.url));
+  }
+
   return NextResponse.next();
 }
 
