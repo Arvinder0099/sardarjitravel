@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Hero from "@/app/(components)/Hero";
+import Hero from "@/app/components/Hero";
 export const runtime = "nodejs";
 
 const DATA: Record<
