@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Hero from "../../components/Hero";
+import Hero from "../components/Hero";
 import { WORLDWIDE_COUNTRIES } from "../../../lib/worldwide";
 
 export const dynamic = "force-dynamic";
