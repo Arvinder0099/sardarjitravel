@@ -1,4 +1,4 @@
-import Hero from "@/app/components/Hero";
+import Hero from "..\..\..\/components/Hero";
 
 export const metadata = {
   title: "Instant Hotel Booking & Confirmation – Sardar ji Travel & Tourism",

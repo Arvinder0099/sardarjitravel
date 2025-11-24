@@ -1,4 +1,4 @@
-import Hero from "@/app/components/Hero";
+import Hero from "..\..\..\..\/components/Hero";
 
 const prices = [
   { label: "30 Days UAE Visa (Change by Flight)", price: "1250 AED" },

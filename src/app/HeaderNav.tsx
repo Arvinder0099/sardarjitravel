@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { WORLDWIDE_COUNTRIES } from "@/lib/worldwide";
+import { WORLDWIDE_COUNTRIES } from "./../lib/worldwide";
 
 export default function HeaderNav() {
   const [open, setOpen] = useState(false);
