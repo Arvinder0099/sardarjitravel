@@ -17,7 +17,7 @@ export default function Hero({
 }) {
   return (
     <section className="relative">
-      <div className={`relative overflow-hidden ${imageHeightClass ?? "h-[70vh] md:h-[78vh]"} border-b border-slate-200 bg-white`}>
+      <div className={`relative overflow-hidden ${imageHeightClass ?? "h-[70vh] md:h-[78vh]"} border-b border-slate-200 bg-gradient-to-br from-blue-50 to-slate-100`}>
         {/* background fill (blurred cover) to avoid empty borders */}
         <img
           src={encodeURI(imageUrl)}
@@ -26,6 +26,7 @@ export default function Hero({
           aria-hidden="true"
           loading="eager"
           decoding="async"
+          onError={(e) => { e.currentTarget.style.display = 'none'; }}
         />
         {/* main hero image (uncropped) */}
         <img
@@ -34,6 +35,7 @@ export default function Hero({
           className={`absolute inset-0 h-full w-full ${imageClassName ?? "object-contain object-center"}`}
           loading="eager"
           decoding="async"
+          onError={(e) => { e.currentTarget.style.display = 'none'; }}
         />
         {/* removed dark overlay and on-image text to ensure no text overlays on images */}
       </div>
