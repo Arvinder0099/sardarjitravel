@@ -24,20 +24,20 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "tailwind-merge": "^3.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.8.3",
+    "@types/node": "^20.17.50",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@eslint/eslintrc": "^3.3.1",
-    "@types/node": "^20.17.50",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
     "cross-env": "^7.0.3",
     "eslint": "^9.27.0",
     "eslint-config-next": "15.3.2",
-    "ffmpeg-static": "^5.2.0",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.8.3"
+    "ffmpeg-static": "^5.2.0"
   }
 }
