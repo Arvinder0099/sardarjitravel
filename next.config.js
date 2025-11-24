@@ -4,8 +4,8 @@
 const nextConfig = {
   reactStrictMode: false,
   poweredByHeader: false,
-  // Use default .next directory for DigitalOcean compatibility
-  distDir: '.next',
+  // Use separate build directories per site role
+  distDir: process.env.SITE_ROLE === 'admin' ? '.next-admin' : '.next-public',
   // Ensure Next writes a BUILD_ID for production starts
   generateBuildId: async () => {
     if (process.env.BUILD_ID && process.env.BUILD_ID.trim().length > 0) {
