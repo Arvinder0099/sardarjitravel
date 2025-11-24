@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Hero from "@/app/(components)/Hero";
-import { readJson } from "@/lib/storage";
+import prices from "@/lib/data/prices.json";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -28,8 +28,8 @@ function isGccCountry(name: string) {
 }
 
 export default function GCCPrices() {
-  const prices = readJson<Price[]>("prices.json");
-  const gccPrices = prices.filter((p) => isGccCountry(p.country));
+  const allPrices = prices as Price[];
+  const gccPrices = allPrices.filter((p) => isGccCountry(p.country));
 
   return (
     <main>
