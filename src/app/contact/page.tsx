@@ -5,7 +5,7 @@ export const metadata = {
   description: "Reach out to Sardarji Travel & Tourism LLC in Dubai for inquiries, bookings, and travel assistance. Your journey starts with us!",
 };
 
-import Hero from "../components/Hero";
+import Hero from "@/app/components/Hero";
 
 export default function ContactPage() {
   return (

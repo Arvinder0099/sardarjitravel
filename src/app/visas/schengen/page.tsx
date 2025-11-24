@@ -1,4 +1,4 @@
-import Hero from "../components/Hero";
+import Hero from "@/app/components/Hero";
 import Link from "next/link";
 
 export const dynamic = "force-dynamic";

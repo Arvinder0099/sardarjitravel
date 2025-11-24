@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Hero from "../../../components/Hero";
+import Hero from "@/app/components/Hero";
 
 const COUNTRY_NAMES: Record<string, string> = {
   "malaysia": "Malaysia",

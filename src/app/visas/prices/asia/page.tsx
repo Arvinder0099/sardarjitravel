@@ -1,4 +1,4 @@
-import Hero from "../../../components/Hero";
+import Hero from "@/app/components/Hero";
 
 export const dynamic = "force-dynamic";
 
