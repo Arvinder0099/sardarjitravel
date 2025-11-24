@@ -3,16 +3,6 @@
 const nextConfig = {
   reactStrictMode: false,
   poweredByHeader: false,
-  distDir: '.next',
-  webpack: (config, { isServer }) => {
-    // Exclude admin routes from public build
-    if (isServer && process.env.SITE_ROLE === 'public') {
-      config.resolve.alias = {
-        ...config.resolve.alias,
-      };
-    }
-    return config;
-  },
   images: {
     unoptimized: true,
     domains: [
