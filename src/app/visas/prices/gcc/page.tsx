@@ -3,8 +3,6 @@ import Hero from "@/app/components/Hero";
 import prices from "../../../../lib/data/prices.json";
 
 export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
-
 type Price = { id: string; country: string; type: string; amount: number; currency: string };
 
 const items = [

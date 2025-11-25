@@ -5,8 +5,6 @@ export const metadata = {
   description: "Instant hotel confirmation vouchers for visa applications worldwide. Get flight + hotel proof issued fast.",
 };
 
-export const dynamic = "force-dynamic";
-
 export default function InstantHotelBookingPage() {
   return (
     <main>

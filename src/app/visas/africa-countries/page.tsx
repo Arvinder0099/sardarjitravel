@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
-
 const AFRICA_COUNTRIES: { name: string; slug: string; info: string }[] = [
   { name: "Ghana", slug: "ghana", info: "Visit visa assistance, documents guidance and application support" },
   { name: "South Africa", slug: "south-africa", info: "Visit visa assistance, documents guidance and application support" },

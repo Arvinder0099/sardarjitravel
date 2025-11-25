@@ -2,8 +2,6 @@ import Link from "next/link";
 import Hero from "@/app/components/Hero";
 import { WORLDWIDE_COUNTRIES } from "../../../lib/worldwide";
 
-export const dynamic = "force-dynamic";
-
 const countries = WORLDWIDE_COUNTRIES;
 
 const wappUAE = "https://wa.me/971588448225?text=Hi%20Sardar%20ji%2C%20I%20need%20help%20with%20worldwide%20visit%20visas.";

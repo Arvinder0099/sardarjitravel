@@ -45,7 +45,6 @@ const IMAGES: Record<string, string> = {
 };
 
 // Removed server-side redirect to avoid prerender invariant errors
-export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Visit Visas – Countries",
   description: "Popular countries for visit visas with guidance and support.",

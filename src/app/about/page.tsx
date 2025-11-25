@@ -1,5 +1,3 @@
-export const dynamic = "force-dynamic";
-
 export const metadata = {
   title: "About Sardarji Travel & Tourism LLC Dubai | Trusted Travel Experts",
   description: "Learn more about Sardarji Travel & Tourism LLC, Dubai. We offer expert travel solutions, personalized tours, and unmatched customer service.",

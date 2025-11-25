@@ -1,7 +1,5 @@
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
-
 const prices = [
   { label: "Business Visit Visa (Saudi)", price: "2500 AED" },
   { label: "Employment Visa – Saudi", price: "12000 AED" },

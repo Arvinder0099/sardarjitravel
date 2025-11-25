@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 export const metadata = {
   title: "GCC Visa Services | Saudi, Bahrain, Qatar",

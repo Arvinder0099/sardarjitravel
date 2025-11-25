@@ -1,7 +1,5 @@
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
-
 const prices = [
   { label: "Dubai Family Residence Visa (2 Years)", price: "2500 AED" },
   { label: "Child Visit Visa – 30 days", price: "200 AED" },

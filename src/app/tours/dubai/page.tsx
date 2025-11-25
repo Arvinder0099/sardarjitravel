@@ -1,5 +1,4 @@
 import { Eye, Tag } from "lucide-react";
-export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Dubai Tours – Sardar Ji Travels",
   description:

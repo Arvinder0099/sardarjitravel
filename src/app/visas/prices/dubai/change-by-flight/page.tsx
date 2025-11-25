@@ -5,8 +5,6 @@ const prices = [
   { label: "60 Days UAE Visa (Change by Flight)", price: "1450 AED" },
 ];
 
-export const dynamic = "force-dynamic";
-
 export default function DubaiChangeByFlightPrices() {
   return (
     <main>

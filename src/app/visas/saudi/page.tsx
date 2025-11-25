@@ -1,8 +1,6 @@
 import Hero from "@/app/components/Hero";
 import Link from "next/link";
 
-export const dynamic = "force-dynamic";
-
 const localThumbs: Record<string, string> = {
   tourist: "Saudi Arabia E-Visa.jpeg",
   umrah: "umrah visa.jpg",

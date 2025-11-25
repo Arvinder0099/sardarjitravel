@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
-
 const items = [
   { href: "/visas/prices/dubai", title: "Dubai Visit Visa Price", desc: "Short term, African nationals, multiple entry, family residence, visa change & extensions" },
   { href: "/visas/prices/gcc", title: "Gulf / GCC Visa Price", desc: "Saudi, Bahrain, Qatar and more" },

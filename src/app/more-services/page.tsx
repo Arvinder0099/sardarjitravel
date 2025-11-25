@@ -1,7 +1,5 @@
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
-
 export const metadata = {
   title: "Exclusive Travel Packages | Sardarji Travel Dubai",
   description: "Check out our latest travel packages and offers. Sardarji Travel & Tourism LLC brings you affordable and unforgettable trips from Dubai.",

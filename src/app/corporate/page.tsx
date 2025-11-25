@@ -1,5 +1,4 @@
 // Removed server-side redirect to avoid prerender invariant errors
-export const dynamic = "force-dynamic";
 export const metadata = {
   title: "Corporate Travel Services – Moved",
   description: "This page has moved. Please visit our Visas & Services index.",

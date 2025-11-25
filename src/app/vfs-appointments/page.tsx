@@ -5,8 +5,6 @@ export const metadata = {
   description: "We help you secure VFS appointments and prepare documents for faster, smoother processing.",
 };
 
-export const dynamic = "force-dynamic";
-
 export default function VfsAppointmentsPage() {
   return (
     <main>

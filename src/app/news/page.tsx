@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-export const dynamic = "force-dynamic";
-
 const posts = [
   {
     slug: "uae-visa-timelines-2025",

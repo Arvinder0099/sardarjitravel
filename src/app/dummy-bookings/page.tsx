@@ -1,7 +1,5 @@
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
-
 export const metadata = {
   title: "Dummy Air Tickets & Hotel Bookings",
   description: "Visa support documents: confirmed-looking tickets and hotel vouchers for applications.",

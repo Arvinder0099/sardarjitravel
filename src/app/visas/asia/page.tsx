@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Hero from "@/app/components/Hero";
-export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 const COUNTRIES: { name: string; slug: string }[] = [

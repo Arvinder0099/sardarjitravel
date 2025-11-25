@@ -8,8 +8,6 @@ export const metadata = {
     "Transit, 30/60/90 days, multiple entry visas, extensions, golden visa, family & residence services.",
 };
 
-export const dynamic = "force-dynamic";
-
 export default function UAEVisasPage() {
   const wappUAE = "https://wa.me/971588448225?text=Hi%20Sardar%20ji%2C%20I%20want%20to%20apply%20for%20a%20UAE%20visa.";
   const wappIN = "https://wa.me/918196904340?text=Hi%20Sardar%20ji%2C%20I%20want%20to%20apply%20for%20a%20UAE%20visa.";

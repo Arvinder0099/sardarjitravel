@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
-
 // Old All Visas options restored: UAE, GCC, Schengen, Worldwide, Asia, Africa
 const items = [
   {

@@ -1,7 +1,5 @@
 import Hero from "@/app/components/Hero";
 
-export const dynamic = "force-dynamic";
-
 export const metadata = {
   title: "Travel Insurance – Schengen & Worldwide Coverage",
   description: "Issue compliant travel/medical insurance for Schengen, UK, USA, GCC and worldwide trips. Fast processing.",
