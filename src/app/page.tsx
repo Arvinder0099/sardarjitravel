@@ -1,6 +1,4 @@
 "use client";
-export const dynamic = "force-dynamic";
-// Force rebuild with images - Nov 25, 2025
 
 import { useEffect, useRef, useState, Fragment } from "react";
 
