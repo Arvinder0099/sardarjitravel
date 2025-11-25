@@ -11,6 +11,14 @@ export default function Home() {
   const [leftOpen, setLeftOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<'hero' | 'videos' | 'testimonials'>('hero');
 
+  // Redirect admin domain to login page
+  useEffect(() => {
+    const hostname = window.location.hostname;
+    if (hostname.startsWith('admin.') || hostname.includes('admin-zxpoc')) {
+      window.location.href = '/admin-login';
+    }
+  }, []);
+
   const heroSlides = [
     { type: "image", src: "/Slideshow/1.jpg" },
     { type: "image", src: "/Slideshow/2.jpg" },
