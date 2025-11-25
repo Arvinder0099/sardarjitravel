@@ -14,6 +14,18 @@ const nextConfig = {
   },
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
+  
+  async rewrites() {
+    return {
+      beforeFiles: [
+        // Ensure public files are accessible
+        {
+          source: '/:path*',
+          destination: '/:path*',
+        },
+      ],
+    };
+  },
 
   async headers() {
     const isDev = process.env.NODE_ENV !== 'production';

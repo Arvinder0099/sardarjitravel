@@ -3,26 +3,30 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   try {
-    // Only protect routes when SITE_ROLE is 'admin'
-    const siteRole = process.env.SITE_ROLE;
+    const siteRole = process.env.SITE_ROLE || 'public';
+    const url = request.nextUrl.clone();
     
-    if (siteRole !== 'admin') {
-      return NextResponse.next();
+    // If this is ADMIN app, block access to public pages
+    if (siteRole === 'admin') {
+      // Allow: admin pages, admin-login, api, _next, static files
+      const allowedPaths = ['/admin', '/dashboard', '/admin-login', '/api', '/_next', '/public'];
+      const isAllowed = allowedPaths.some(path => url.pathname.startsWith(path));
+      
+      if (!isAllowed && url.pathname !== '/') {
+        // Redirect non-admin pages to login
+        if (url.pathname !== '/admin-login') {
+          return NextResponse.redirect(new URL('/admin-login', request.url));
+        }
+      }
     }
-
-    // Allow access to login page
-    if (request.nextUrl.pathname === '/admin-login') {
-      return NextResponse.next();
-    }
-
-    // Check if user is authenticated
-    const authCookie = request.cookies.get('admin-authenticated');
     
-    // If not authenticated, redirect to login
-    if (!authCookie?.value || authCookie.value !== 'true') {
-      return NextResponse.redirect(new URL('/admin-login', request.url));
+    // If this is PUBLIC app, block access to admin pages
+    if (siteRole === 'public') {
+      if (url.pathname.startsWith('/admin') || url.pathname.startsWith('/dashboard')) {
+        return NextResponse.redirect(new URL('/', request.url));
+      }
     }
-
+    
     return NextResponse.next();
   } catch (error) {
     console.error('Middleware error:', error);
@@ -31,5 +35,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|admin-login).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
 };
