@@ -1,10 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState, Fragment } from "react";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const router = useRouter();
   const waRef = useRef<HTMLDivElement | null>(null);
   const [waOpen, setWaOpen] = useState(false);
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -12,17 +10,6 @@ export default function Home() {
   const [sidebarDark, setSidebarDark] = useState(false);
   const [leftOpen, setLeftOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<'hero' | 'videos' | 'testimonials'>('hero');
-
-  // Redirect to admin login if this is admin app
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      // Check if hostname indicates admin app
-      const hostname = window.location.hostname;
-      if (hostname.startsWith('admin.') || hostname.includes('admin-zxpoc')) {
-        router.push('/admin-login');
-      }
-    }
-  }, [router]);
 
   const heroSlides = [
     { type: "image", src: "/Slideshow/1.jpg" },
