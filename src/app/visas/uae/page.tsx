@@ -61,7 +61,7 @@ export default function UAEVisasPage() {
       <Hero
         title="Dubai UAE Visas"
         subtitle="30, 60, 90 days, multiple entry, extensions, 5-year tourist, family & residence"
-        imageUrl="/visa images/dubai.jpeg"
+        imageUrl="/visa images/dubai thumbnail.jpeg"
         alt="Dubai UAE skyline"
       />
       <section className="bg-white">
@@ -71,7 +71,7 @@ export default function UAEVisasPage() {
               <Link key={i.slug} href={`/visas/uae/${i.slug}`} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm hover:shadow overflow-hidden">
                 <div className="flex items-center gap-4">
                   <img
-                    src={localThumbs[i.slug] ? encodeURI(`/visa images/${localThumbs[i.slug]}`) : (thumbs[i.slug] ?? "/visa images/dubai.jpeg")}
+                    src={localThumbs[i.slug] ? encodeURI(`/visa images/${localThumbs[i.slug]}`) : (thumbs[i.slug] ?? "/visa images/dubai thumbnail.jpeg")}
                     alt={i.t}
                     className="w-16 h-16 object-cover rounded-md border border-slate-200"
                   />

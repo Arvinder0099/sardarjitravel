@@ -41,7 +41,7 @@ const IMAGES: Record<string, string> = {
   canada: "https://ext.same-assets.com/1035752913/333604389.jpeg",
   australia: "https://ext.same-assets.com/1035752913/2866358621.jpeg",
   saudi: "/visa images/Saudi Arabia E-Visa.jpeg",
-  uae: "/visa images/dubai.jpeg",
+  uae: "/visa images/dubai thumbnail.jpeg",
 };
 
 // Removed server-side redirect to avoid prerender invariant errors

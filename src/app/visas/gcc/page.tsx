@@ -19,8 +19,8 @@ export default function GCCVisasPage() {
   ];
   const localThumbs: Record<string, string> = {
     saudi: "Saudi Arabia E-Visa.jpeg",
-    bahrain: "dubai.jpeg",
-    qatar: "dubai.jpeg",
+    bahrain: "dubai thumbnail.jpeg",
+    qatar: "dubai thumbnail.jpeg",
   };
 
   return (
@@ -38,7 +38,7 @@ export default function GCCVisasPage() {
               <Link key={i.slug} href={i.href} className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm hover:shadow">
                 <div className="flex items-center gap-4">
                   <img
-                    src={localThumbs[i.slug] ? encodeURI(`/visa images/${localThumbs[i.slug]}`) : encodeURI("/visa images/dubai.jpeg")}
+                    src={localThumbs[i.slug] ? encodeURI(`/visa images/${localThumbs[i.slug]}`) : encodeURI("/visa images/dubai thumbnail.jpeg")}
                     alt={i.t}
                     className="w-16 h-16 object-cover rounded-md border border-slate-200"
                   />

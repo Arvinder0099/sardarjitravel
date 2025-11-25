@@ -11,7 +11,7 @@ export default function SpecialDubaiVisaPage() {
       <Hero
         title="Special Dubai Visa Services"
         subtitle="Change / Renew inside UAE • Without Exit • Fast & Guided Processing"
-        imageUrl="/visa images/dubai.jpeg"
+        imageUrl="/visa images/dubai thumbnail.jpeg"
         alt="Dubai visa services"
         imageHeightClass="h-64 sm:h-80 md:h-[460px]"
       />

@@ -19,7 +19,7 @@ export default function SchengenVisasPage() {
     hungary: "/visa images/Hungary visa.jpeg",
     austria: "/visa images/Austria visa.jpeg",
     finland: "/visa images/finland visa.jpeg",
-    poland: "/visa images/poland visa.jpeg",
+    poland: "/visa images/Poland visa.jpeg",
     portugal: "/visa images/Portugal visa.jpeg",
     czech: "/visa images/czech republic visa.jpeg",
     sweden: "/visa images/sweden visa.jpeg",

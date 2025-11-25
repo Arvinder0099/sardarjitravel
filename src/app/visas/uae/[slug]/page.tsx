@@ -162,7 +162,7 @@ export default function UAEInnerPage({ params }: { params: { slug: string } }) {
     if (fname) {
       return encodeURI(`/visa images/${fname}`);
     }
-    return p.imageUrl || "/visa images/dubai.jpeg";
+    return p.imageUrl || "/visa images/dubai thumbnail.jpeg";
   };
 
   return (
