@@ -2,7 +2,6 @@ import Link from "next/link";
 // (remove) import fs from "fs";
 // (remove) import path from "path";
 import { notFound } from "next/navigation";
-export const dynamic = "force-dynamic";
 
 const PAGES: Record<string, { title: string; intro: string; bullets: string[]; docs?: string[]; imageUrl: string; eligibility?: string[]; steps?: string[]; notes?: string[] }> = {
   "transit-visa": {

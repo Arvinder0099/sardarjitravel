@@ -100,6 +100,7 @@ export default function HeaderNav() {
           <div className="flex flex-col items-end leading-tight">
             <a href="tel:+971588448225" className="inline-flex items-center rounded-md bg-amber-600 px-4 py-2 text-white shadow hover:bg-amber-700 whitespace-nowrap shrink-0">Call +971 588 448 225</a>
             <a href="tel:+918196904340" className="mt-1 inline-flex items-center rounded-md bg-amber-600 px-4 py-2 text-white shadow hover:bg-amber-700 whitespace-nowrap shrink-0">India +918196904340</a>
+            <a href="tel:+97145782239" className="mt-1 inline-flex items-center rounded-md bg-amber-600 px-4 py-2 text-white shadow hover:bg-amber-700 whitespace-nowrap shrink-0">UAE Landline +971 45782239</a>
           </div>
         </nav>
 
@@ -313,6 +314,7 @@ export default function HeaderNav() {
             <div className="border-t border-slate-200 p-4 space-y-3">
               <a href="tel:+971588448225" className="block w-full text-center rounded-md bg-amber-600 px-4 py-2 text-white hover:bg-amber-700">Call +971 588 448 225</a>
               <a href="tel:+918196904340" className="block w-full text-center rounded-md bg-amber-600 px-4 py-2 text-white hover:bg-amber-700">India +918196904340</a>
+              <a href="tel:+97145782239" className="block w-full text-center rounded-md bg-amber-600 px-4 py-2 text-white hover:bg-amber-700">UAE Landline +971 45782239</a>
             </div>
           </div>
         </div>

@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-export const dynamic = "force-dynamic";
-
 const POSTS: Record<string, { title: string; body: string; date: string }> = {
   "uae-visa-timelines-2025": {
     title: "UAE Visit Visa Timelines in 2025",

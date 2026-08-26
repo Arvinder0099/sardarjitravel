@@ -442,8 +442,6 @@ const IMAGES: Record<string, string> = {
   "south-africa": "/visa images/south africa visa.jpeg",
 };
 
-
-export const dynamic = "force-dynamic";
 export default function CountryPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const entry = DATA[slug];

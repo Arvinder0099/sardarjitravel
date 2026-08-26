@@ -17,12 +17,14 @@ const nextConfig = {
 
   async headers() {
     const isDev = process.env.NODE_ENV !== 'production';
-    const scriptSrc = isDev ? "'self' 'unsafe-inline' 'unsafe-eval'" : "'self' 'unsafe-inline'";
+    const scriptSrc = isDev 
+      ? "'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com" 
+      : "'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com";
     const connectSrc = isDev
-      ? "'self' https: ws: wss: http://localhost:3050 http://0.0.0.0:3050 http://localhost:3051 http://0.0.0.0:3051 http://127.0.0.1:3051"
-      : "'self' https:";
+      ? "'self' https: ws: wss: http://localhost:3050 http://0.0.0.0:3050 http://localhost:3051 http://0.0.0.0:3051 http://127.0.0.1:3051 https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com"
+      : "'self' https: https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com";
 
-    const csp = `default-src 'self'; img-src 'self' data: blob: https:; script-src ${scriptSrc}; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src ${connectSrc}; frame-ancestors 'self'; base-uri 'self'; form-action 'self'`;
+    const csp = `default-src 'self'; img-src 'self' data: blob: https: https://www.google-analytics.com https://www.googletagmanager.com; script-src ${scriptSrc}; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src ${connectSrc}; frame-ancestors 'self'; base-uri 'self'; form-action 'self'`;
 
     return [
       {

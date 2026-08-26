@@ -30,8 +30,8 @@ export default function ContactPage() {
               <div className="space-y-4 text-slate-700">
                 <div>
                   <p className="font-semibold text-slate-900">Sardarji Travel & Tourism LLC</p>
-                  <p>Office No B10339, Plot No 94-0</p>
-                  <p>Al Goze Third, Dubai, UAE</p>
+                  <p>OFICE # 05, LEVEL M2, ZONEA2 BURJ AL NAHAR MALL</p>
+                  <p>DEIRA, DUBAI</p>
                 </div>
 
                 <div className="pt-4 border-t border-slate-200">
@@ -42,6 +42,10 @@ export default function ContactPage() {
                   <br />
                   <a href="tel:+918196904340" className="text-amber-600 hover:text-amber-700 font-semibold">
                     +91 81969 04340 (India)
+                  </a>
+                  <br />
+                  <a href="tel:+97145782239" className="text-amber-600 hover:text-amber-700 font-semibold">
+                    +971 45782239 (UAE Landline)
                   </a>
                 </div>
 

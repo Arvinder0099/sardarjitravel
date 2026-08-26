@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Hero from "@/app/components/Hero";
-export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 const COUNTRY_NAMES: Record<string, string> = {

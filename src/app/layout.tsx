@@ -84,8 +84,8 @@ export default async function RootLayout({
                 <span className="font-semibold tracking-tight text-slate-900">sardarji travel and tourism llc duabi</span>
               </div>
               <div className="mt-4 text-sm text-slate-700">
-                <p>OFFICE NO B10339 PLOT NO 94-0 AL GOZE THIRD DUBAI</p>
-                <p>Dubai, UAE</p>
+                <p>OFICE # 05, LEVEL M2, ZONEA2 BURJ AL NAHAR MALL</p>
+                <p>DEIRA, DUBAI</p>
                 <p className="mt-2">Email: <a href="mailto:info@sardarjitravel.ae" className="text-slate-900 hover:underline">info@sardarjitravel.ae</a></p>
                 <p>UAE: <a href="tel:+971588448225" className="text-slate-900 hover:underline">+971 588 448 225</a></p>
                 <p>India: <a href="tel:+918196904340" className="text-slate-900 hover:underline">+91 81969 04340</a></p>
